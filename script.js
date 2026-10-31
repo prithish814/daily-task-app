@@ -168,3 +168,26 @@ addButton.addEventListener("click", function() {
 // Load saved tasks when page opens
 loadTasks();
 displayTasks();
+
+// Register Service Worker
+if ("serviceWorker" in navigator) {
+
+    window.addEventListener("load", function() {
+
+        navigator.serviceWorker.register("./service-worker.js")
+
+            .then(function(registration) {
+
+                console.log("Service Worker registered successfully!");
+
+            })
+
+            .catch(function(error) {
+
+                console.log("Service Worker registration failed:", error);
+
+            });
+
+    });
+
+}
