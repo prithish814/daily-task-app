@@ -1,4 +1,4 @@
-const CACHE_NAME = "daily-task-app-v1";
+const CACHE_NAME = "daily-task-app-v3";
 
 const FILES_TO_CACHE = [
 "./",
@@ -6,8 +6,8 @@ const FILES_TO_CACHE = [
 "./style.css",
 "./script.js",
 "./manifest.json",
-"./icons/icon-192.png",
-"./icons/icon-512.png"
+"./icon-192.png",
+"./icon-512.png"
 ];
 
 // Install event
