@@ -13,7 +13,6 @@ const FILES_TO_CACHE = [
 // Install event
 self.addEventListener("install", function(event) {
 
-```
 event.waitUntil(
 
     caches.open(CACHE_NAME).then(function(cache) {
@@ -23,14 +22,12 @@ event.waitUntil(
     })
 
 );
-```
 
 });
 
 // Activate event
 self.addEventListener("activate", function(event) {
 
-```
 event.waitUntil(
 
     caches.keys().then(function(cacheNames) {
@@ -50,14 +47,12 @@ event.waitUntil(
     })
 
 );
-```
 
 });
 
 // Fetch event
 self.addEventListener("fetch", function(event) {
 
-```
 if (event.request.method !== "GET") {
     return;
 }
@@ -71,6 +66,5 @@ event.respondWith(
     })
 
 );
-```
 
 });
