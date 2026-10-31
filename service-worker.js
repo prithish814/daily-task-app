@@ -13,6 +13,7 @@ const FILES_TO_CACHE = [
 // Install event
 self.addEventListener("install", function(event) {
 
+
 event.waitUntil(
 
     caches.open(CACHE_NAME).then(function(cache) {
